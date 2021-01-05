@@ -1,0 +1,22 @@
+{
+  "name": "@qa/utils",
+  "version": "0.0.1",
+  "description": "Utility class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhengyuliang/utils"
+  },
+  "keywords": [
+    "utils",
+    "tools"
+  ],
+  "author": "zhengyuliang",
+  "license": "ISC",
+  "__npminstall_done": "Sat Nov 23 2019 15:55:33 GMT+0800 (GMT+08:00)",
+  "_from": "@qa/utils@1.1.0",
+  "_resolved": "https://registry.npm.taobao.org/utils-lan/download/utils-lan-1.1.0.tgz"
+}
