@@ -9,7 +9,7 @@ console.log(arrJudge(['1','2']))
 ```
 
 
-## arr.js 12
+## arr.js 13
 备注:目前数组相关工具类只支持一维数组  
 
 |方法名|作用|参数|返回值|版本|
@@ -26,8 +26,9 @@ console.log(arrJudge(['1','2']))
 |arrIntersection|数组交集|arrOne：数组一；arrTwo：数组二|Array，处理的数组值|0.0.3|
 |arrDifference|数组差集|arrOne：数组一；arrTwo：数组二|Array，处理的数组值|0.0.3|
 |arrTwoToArrObj|数组合并成对象数组|arrOne：数组一；arrTwo：数组二；oneKey：属性一(选传)；twoKey：属性一(选传)|Array，处理的数组值|0.0.3|
+|arrSteamroller|数组扁平化|arr|Array，处理的数组值|0.0.4|
 
-## check.js 10
+## check.js 11
 |方法名|作用|参数|返回值|版本|
 |--|--|--|--|--|
 |checkNum|判断是否是数字|data： 判断的值|Boolean 值| 0.0.3|
@@ -40,6 +41,9 @@ console.log(arrJudge(['1','2']))
 |checkEmail| 判断是否是邮箱|Boolean 值| data|0.0.3|
 |checkTelphone|判断是否是手机号|Boolean 值|data|0.0.3|
 |checkUrl| 判断是正确的网址| data|Boolean 值|0.0.3|
+|checkPwdLen| 检测密码强度 | arr |Number|0.0.4|
+
+
 
 ## client.js 4
 |方法名|作用|参数|返回值|版本|
@@ -59,6 +63,8 @@ console.log(arrJudge(['1','2']))
 |--|--|--|--|--|
 |objIsEqual|判断两个对象是否相等| oneObj：对象一；twoObj：对象二；| Boolean| 0.0.3|
 |objDeepClone|对象深度拷贝| obj：克隆的对象；|  obj：克隆后的对象；| 0.0.3|
+|objClearKeys|清除对象中值为空的属性| obj：对象； clearValues：数组: [null, undefined, ''] | obj 去掉后的对象 | 0.0.4 |
+|objFillKeys|设置对象中值为空的属性的默认值| obj：对象； clearValues：数组: [null, undefined, '']；val: 替换值 | obj | 0.0.4 |
 
 ## storage.js 11
 |方法名|作用|参数|返回值|版本|
@@ -75,7 +81,7 @@ console.log(arrJudge(['1','2']))
 |cookieGet|cookie 获取| key：获取属性；| 存贮的属性值| 0.0.3|
 |cookieRemove|cookie 删除| key：删除属性；| -| 0.0.3|
 
-## str.js 7
+## str.js 11
 |方法名|作用|参数|返回值|版本|
 |--|--|--|--|--|
 |strTrimLeftOrRight|去除字符左右空格| str：处理字符；|处理后的字符| 0.0.3|
@@ -87,6 +93,8 @@ console.log(arrJudge(['1','2']))
 |strToCapitalLetter| 字符转化成以大写开头| str：处理字符；|处理后的字符| 0.0.3|
 |strTrim| 去掉字符串空格| str：处理字符；type：1-所有空格  2-前后空格  3-前空格 4-后空格；|处理后的字符| 0.0.3|
 |strChangeCase| 字母大小写切换| str：处理字符；type：1:首字母大写  2：首页母小写 3：大小写转换 4：全部大写 5：全部小写|处理后的字符| 0.0.3|
+|strRepeatCount| 字符串循环复制 | str: 处理字符；count: 次数 |处理后的字符| 0.0.4 |
+|strFilterEmjoy| 过滤字符串的表情 | str: 处理字符；replaceStr: 表情 |处理后的字符| 0.0.4 |
 
 ## thrDeb.js 2
 |方法名|作用|参数|返回值|版本|
@@ -94,7 +102,7 @@ console.log(arrJudge(['1','2']))
 |throttle|节流|func：处理函数；delay：延时；|执行函数| 0.0.3|
 |debounce|防抖|func：处理函数；delay：延时；|执行函数| 0.0.3|
 
-## time.js 9
+## time.js 11
 |方法名|作用|参数|返回值|版本|
 |--|--|--|--|--|
 |getYear|获取当前年份|-|年份值| 0.0.3|
@@ -106,16 +114,28 @@ console.log(arrJudge(['1','2']))
 |timesToYyMmDd|时间戳转化为年月日|times：时间戳；ymd：格式类型,值可为yyyy-mm-dd,yyyy/mm/dd；hms：时分秒,值可为；hh,hh:mm,hh:mm:ss|处理后的年月日| 0.0.3|
 |YyMmDdToTimes|年月日转化成时间戳|yyyy/mm/dd 或yyyy-mm-dd 或yyyy-mm-dd hh:mm 或yyyy-mm-dd hh:mm:ss|时间戳| 0.0.3|
 |compareTimeOneLessTwo|比较时间一小于二|timeOne：时间一；timeTwo：时间二；| Boolean| 0.0.3|
+|getEndTime|到某一个时间的倒计时|endTime| {{d: number, h: number, m: number, s: number}} | 0.0.4 |
+|formatDate|时间格式化|date: 时间， fmt: 默认时间格式 yyyy-MM-dd hh:mm:ss| 返回时间 | 0.0.4 |
 
 ## url.js 1
 |方法名|作用|参数|返回值|版本|
 |--|--|--|--|--|
 |getQueryString|获取路由传参| name:传参属性|属性值| 0.0.3|
+|setUrlParam|设置url参数| url: 地址；obj: 参数对的象 |返回url参数| 0.0.4 |
+|getUrlParam|获取url参数| url: 地址 |Object| 0.0.4 |
 
-## fn.js 1
+## fn.js 2
 
-| 方法名        | 作用         | 参数                   | 返回值 | 版本  |
-| ------------- | ------------ | ---------------------- | ------ | ----- |
-| isDataFnTypes | 判断数据类型 | val:传参属性 type:类型 | 属性值 | 0.0.3 |
+| 方法名        | 作用                   | 参数                   | 返回值 | 版本  |
+| ------------- | ---------------------- | ---------------------- | ------ | ----- |
+| isDataFnTypes | 判断数据类型           | val:传参属性 type:类型 | 属性值 | 0.0.3 |
+| randomNumber  | 随机返回一个范围的数字 | n1: 数字；n2: 数字     | number | 0.0.4 |
+| randomColor   | 随机产生颜色           |                        | string | 0.0.4 |
+
+## tran.js 1
+
+| 方法名      | 作用                        | 参数     | 返回值 | 版本  |
+| ----------- | --------------------------- | -------- | ------ | ----- |
+| tranUpDigit | 现金额大写转换函数 (人民币) | n: 数字; | String | 0.0.4 |
 
 > 此公共处理方式，会不断更新，每次更新版本
