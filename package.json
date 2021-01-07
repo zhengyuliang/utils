@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -p",
+    "commitmsg": "validate-commit-msg"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   "license": "ISC",
   "devDependencies": {
     "conventional-changelog": "^3.1.24",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "validate-commit-msg": "^2.14.0"
   },
   "config": {
     "commitizen": {
