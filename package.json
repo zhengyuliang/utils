@@ -1,10 +1,12 @@
 {
   "name": "@synthesisdots/utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "utils",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
     "tools"
   ],
   "author": "zhengyuliang",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "conventional-changelog": "^3.1.24",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
